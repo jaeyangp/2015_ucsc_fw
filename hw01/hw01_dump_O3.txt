@@ -1,0 +1,23 @@
+
+hw01_O3.o:     file format elf32-littlearm
+
+
+Disassembly of section .text.startup:
+
+00000000 <main>:
+   0:	4a07      	ldr	r2, [pc, #28]	; (20 <main+0x20>)
+   2:	4908      	ldr	r1, [pc, #32]	; (24 <main+0x24>)
+   4:	20ff      	movs	r0, #255	; 0xff
+   6:	6010      	str	r0, [r2, #0]
+   8:	680a      	ldr	r2, [r1, #0]
+   a:	460b      	mov	r3, r1
+   c:	6809      	ldr	r1, [r1, #0]
+   e:	f042 0220 	orr.w	r2, r2, #32
+  12:	b2d2      	uxtb	r2, r2
+  14:	f001 01df 	and.w	r1, r1, #223	; 0xdf
+  18:	601a      	str	r2, [r3, #0]
+  1a:	6019      	str	r1, [r3, #0]
+  1c:	e7fc      	b.n	18 <main+0x18>
+  1e:	bf00      	nop
+  20:	2009c000 	.word	0x2009c000
+  24:	2009c014 	.word	0x2009c014
