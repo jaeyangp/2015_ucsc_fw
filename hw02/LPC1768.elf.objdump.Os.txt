@@ -1,0 +1,73 @@
+
+LPC1768.elf:     file format elf32-littlearm
+
+
+Disassembly of section .text:
+
+00000000 <g_pfnVectors>:
+   0:	00 24 00 10 c7 00 00 00 00 00 00 00 00 00 00 00     .$..............
+  10:	c5 00 00 00 c5 00 00 00 c5 00 00 00 00 00 00 00     ................
+	...
+  2c:	c5 00 00 00 c5 00 00 00 00 00 00 00 c5 00 00 00     ................
+  3c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  4c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  5c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  6c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  7c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  8c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  9c:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  ac:	c5 00 00 00 c5 00 00 00 c5 00 00 00 c5 00 00 00     ................
+  bc:	c5 00 00 00 c5 00 00 00                             ........
+
+000000c4 <Default_Handler>:
+  c4:	e7fe      	b.n	c4 <Default_Handler>
+
+000000c6 <Reset_Handler>:
+  c6:	4668      	mov	r0, sp
+  c8:	f020 0107 	bic.w	r1, r0, #7
+  cc:	468d      	mov	sp, r1
+  ce:	b501      	push	{r0, lr}
+  d0:	f000 f81e 	bl	110 <main>
+  d4:	e8bd 4001 	ldmia.w	sp!, {r0, lr}
+  d8:	4685      	mov	sp, r0
+  da:	4770      	bx	lr
+
+000000dc <_Z8samplingPh>:
+  dc:	b5f0      	push	{r4, r5, r6, r7, lr}
+  de:	4b0b      	ldr	r3, [pc, #44]	; (10c <_Z8samplingPh+0x30>)
+  e0:	2200      	movs	r2, #0
+  e2:	701a      	strb	r2, [r3, #0]
+  e4:	f893 e014 	ldrb.w	lr, [r3, #20]
+  e8:	7d1f      	ldrb	r7, [r3, #20]
+  ea:	7d1e      	ldrb	r6, [r3, #20]
+  ec:	7d1d      	ldrb	r5, [r3, #20]
+  ee:	7d1c      	ldrb	r4, [r3, #20]
+  f0:	7d19      	ldrb	r1, [r3, #20]
+  f2:	7d1a      	ldrb	r2, [r3, #20]
+  f4:	3314      	adds	r3, #20
+  f6:	781b      	ldrb	r3, [r3, #0]
+  f8:	f880 e000 	strb.w	lr, [r0]
+  fc:	7047      	strb	r7, [r0, #1]
+  fe:	7086      	strb	r6, [r0, #2]
+ 100:	70c5      	strb	r5, [r0, #3]
+ 102:	7104      	strb	r4, [r0, #4]
+ 104:	7141      	strb	r1, [r0, #5]
+ 106:	7182      	strb	r2, [r0, #6]
+ 108:	71c3      	strb	r3, [r0, #7]
+ 10a:	bdf0      	pop	{r4, r5, r6, r7, pc}
+ 10c:	2009c002 	.word	0x2009c002
+
+00000110 <main>:
+ 110:	b510      	push	{r4, lr}
+ 112:	4c05      	ldr	r4, [pc, #20]	; (128 <main+0x18>)
+ 114:	4620      	mov	r0, r4
+ 116:	f7ff ffe1 	bl	dc <_Z8samplingPh>
+ 11a:	4b04      	ldr	r3, [pc, #16]	; (12c <main+0x1c>)
+ 11c:	3408      	adds	r4, #8
+ 11e:	429c      	cmp	r4, r3
+ 120:	d3f8      	bcc.n	114 <main+0x4>
+ 122:	2000      	movs	r0, #0
+ 124:	bd10      	pop	{r4, pc}
+ 126:	bf00      	nop
+ 128:	10000000 	.word	0x10000000
+ 12c:	100003ff 	.word	0x100003ff

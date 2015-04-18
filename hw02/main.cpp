@@ -55,11 +55,11 @@ void sampling(unsigned char *buf)
 	buf[7] = r7;
 }
 
-void serial_prt(unsigned char *buf)
+void serial_prt(void)
 {
 	int i;
 	for (i = 0; i < 1024; i++) {
-		if (buffer[i] == 0xfd)
+		if (*(buffer + i) == 0xfd)
 			pc.printf("0");
 		else
 			pc.printf("1");
@@ -82,7 +82,7 @@ int main(void)
 		p += 8;
 	}
 
-	serial_prt(buffer);
+	serial_prt();
 
 	return 0;
 }

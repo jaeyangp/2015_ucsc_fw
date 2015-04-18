@@ -1125,532 +1125,533 @@ LOAD /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/armv7-
  .text._Z8samplingPh
                 0x000001e0       0x34 main.o
                 0x000001e0                sampling(unsigned char*)
- .text._Z10serial_prtPh
+ .text._Z10serial_prtv
                 0x00000214       0x58 main.o
-                0x00000214                serial_prt(unsigned char*)
+                0x00000214                serial_prt()
  .text.startup.main
-                0x0000026c       0x28 main.o
+                0x0000026c       0x24 main.o
                 0x0000026c                main
  .text._ZN4mbed6SerialD0Ev
-                0x00000294       0x1e main.o
-                0x00000294                mbed::Serial::~Serial()
-                0x000002a6                non-virtual thunk to mbed::Serial::~Serial()
-                0x000002ac                non-virtual thunk to mbed::Serial::~Serial()
- *fill*         0x000002b2        0x2 
+                0x00000290       0x1e main.o
+                0x00000290                mbed::Serial::~Serial()
+                0x000002a2                non-virtual thunk to mbed::Serial::~Serial()
+                0x000002a8                non-virtual thunk to mbed::Serial::~Serial()
+ *fill*         0x000002ae        0x2 
  .text.startup._GLOBAL__sub_I_pc
-                0x000002b4       0x34 main.o
+                0x000002b0       0x34 main.o
  .text.NVIC_SetVector
-                0x000002e8       0x3c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/cmsis_nvic.o
-                0x000002e8                NVIC_SetVector
+                0x000002e4       0x3c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/cmsis_nvic.o
+                0x000002e4                NVIC_SetVector
  .text.SystemInit
-                0x00000324       0xb8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/system_LPC17xx.o
-                0x00000324                SystemInit
+                0x00000320       0xb8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/system_LPC17xx.o
+                0x00000320                SystemInit
  .text.mbed_die
-                0x000003dc      0x10c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/board.o
-                0x000003dc                mbed_die
+                0x000003d8      0x10c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/board.o
+                0x000003d8                mbed_die
  .text._ZN4mbed10FileHandle4flenEv
-                0x000004e8       0x34 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000004e8                mbed::FileHandle::flen()
+                0x000004e4       0x34 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000004e4                mbed::FileHandle::flen()
  .text._ZN4mbed10FileHandleD2Ev
-                0x0000051c       0x2c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x0000051c                mbed::FileHandle::~FileHandle()
-                0x0000051c                mbed::FileHandle::~FileHandle()
+                0x00000518       0x2c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000518                mbed::FileHandle::~FileHandle()
+                0x00000518                mbed::FileHandle::~FileHandle()
  .text._ZN4mbed10FileHandleD0Ev
-                0x00000548       0x34 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00000548                mbed::FileHandle::~FileHandle()
+                0x00000544       0x34 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000544                mbed::FileHandle::~FileHandle()
  .text._ZL11init_serialv.part.0
-                0x0000057c       0x18 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
- .text._open    0x00000594       0xf8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00000594                _open
- .text._close   0x0000068c       0x2c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x0000068c                _close
- .text._write   0x000006b8       0x50 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000006b8                _write
- .text._read    0x00000708       0x4c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00000708                _read
- .text._isatty  0x00000754       0x28 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00000754                _isatty
- .text._lseek   0x0000077c       0x28 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x0000077c                _lseek
- .text._fstat   0x000007a4       0x20 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000007a4                _fstat
+                0x00000578       0x18 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+ .text._open    0x00000590       0xf8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000590                _open
+ .text._close   0x00000688       0x2c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000688                _close
+ .text._write   0x000006b4       0x50 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000006b4                _write
+ .text._read    0x00000704       0x4c mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000704                _read
+ .text._isatty  0x00000750       0x28 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000750                _isatty
+ .text._lseek   0x00000778       0x28 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x00000778                _lseek
+ .text._fstat   0x000007a0       0x20 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000007a0                _fstat
  .text.__cxa_pure_virtual
-                0x000007c4        0x8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000007c4                __cxa_pure_virtual
+                0x000007c0        0x8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000007c0                __cxa_pure_virtual
  .text.mbed_main
-                0x000007cc        0x4 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000007cc                mbed_main
+                0x000007c8        0x4 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000007c8                mbed_main
  .text.mbed_sdk_init
-                0x000007d0        0x4 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000007d0                mbed_sdk_init
+                0x000007cc        0x4 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000007cc                mbed_sdk_init
  .text.__wrap_main
-                0x000007d4       0x14 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000007d4                __wrap_main
- .text._sbrk    0x000007e8       0x28 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x000007e8                _sbrk
- .text._exit    0x00000810       0x30 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00000810                _exit
+                0x000007d0       0x14 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000007d0                __wrap_main
+ .text._sbrk    0x000007e4       0x28 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x000007e4                _sbrk
+ .text._exit    0x0000080c       0x30 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x0000080c                _exit
  .text._ZN4mbed26mbed_set_unbuffered_streamEP7__sFILE
-                0x00000840        0x8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
-                0x00000840                mbed::mbed_set_unbuffered_stream(__sFILE*)
- .text          0x00000848       0x44 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/startup_LPC17xx.o
-                0x00000848                Reset_Handler
-                0x00000878                NMI_Handler
-                0x0000087a                HardFault_Handler
-                0x0000087c                MemManage_Handler
-                0x0000087e                BusFault_Handler
-                0x00000880                UsageFault_Handler
-                0x00000882                SVC_Handler
-                0x00000884                DebugMon_Handler
-                0x00000886                PendSV_Handler
-                0x00000888                SysTick_Handler
-                0x0000088a                TIMER2_IRQHandler
-                0x0000088a                RIT_IRQHandler
-                0x0000088a                I2C0_IRQHandler
-                0x0000088a                USBActivity_IRQHandler
-                0x0000088a                PWM1_IRQHandler
-                0x0000088a                I2C1_IRQHandler
-                0x0000088a                EINT2_IRQHandler
-                0x0000088a                UART1_IRQHandler
-                0x0000088a                EINT3_IRQHandler
-                0x0000088a                CANActivity_IRQHandler
-                0x0000088a                TIMER3_IRQHandler
-                0x0000088a                UART0_IRQHandler
-                0x0000088a                PLL0_IRQHandler
-                0x0000088a                CAN_IRQHandler
-                0x0000088a                PLL1_IRQHandler
-                0x0000088a                SSP0_IRQHandler
-                0x0000088a                I2S_IRQHandler
-                0x0000088a                I2C2_IRQHandler
-                0x0000088a                RTC_IRQHandler
-                0x0000088a                TIMER0_IRQHandler
-                0x0000088a                SPI_IRQHandler
-                0x0000088a                EINT1_IRQHandler
-                0x0000088a                TIMER1_IRQHandler
-                0x0000088a                UART2_IRQHandler
-                0x0000088a                Default_Handler
-                0x0000088a                ADC_IRQHandler
-                0x0000088a                SSP1_IRQHandler
-                0x0000088a                USB_IRQHandler
-                0x0000088a                BOD_IRQHandler
-                0x0000088a                WDT_IRQHandler
-                0x0000088a                QEI_IRQHandler
-                0x0000088a                EINT0_IRQHandler
-                0x0000088a                DEF_IRQHandler
-                0x0000088a                DMA_IRQHandler
-                0x0000088a                UART3_IRQHandler
-                0x0000088a                MCPWM_IRQHandler
-                0x0000088a                ENET_IRQHandler
+                0x0000083c        0x8 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
+                0x0000083c                mbed::mbed_set_unbuffered_stream(__sFILE*)
+ .text          0x00000844       0x44 mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/startup_LPC17xx.o
+                0x00000844                Reset_Handler
+                0x00000874                NMI_Handler
+                0x00000876                HardFault_Handler
+                0x00000878                MemManage_Handler
+                0x0000087a                BusFault_Handler
+                0x0000087c                UsageFault_Handler
+                0x0000087e                SVC_Handler
+                0x00000880                DebugMon_Handler
+                0x00000882                PendSV_Handler
+                0x00000884                SysTick_Handler
+                0x00000886                TIMER2_IRQHandler
+                0x00000886                RIT_IRQHandler
+                0x00000886                I2C0_IRQHandler
+                0x00000886                USBActivity_IRQHandler
+                0x00000886                PWM1_IRQHandler
+                0x00000886                I2C1_IRQHandler
+                0x00000886                EINT2_IRQHandler
+                0x00000886                UART1_IRQHandler
+                0x00000886                EINT3_IRQHandler
+                0x00000886                CANActivity_IRQHandler
+                0x00000886                TIMER3_IRQHandler
+                0x00000886                UART0_IRQHandler
+                0x00000886                PLL0_IRQHandler
+                0x00000886                CAN_IRQHandler
+                0x00000886                PLL1_IRQHandler
+                0x00000886                SSP0_IRQHandler
+                0x00000886                I2S_IRQHandler
+                0x00000886                I2C2_IRQHandler
+                0x00000886                RTC_IRQHandler
+                0x00000886                TIMER0_IRQHandler
+                0x00000886                SPI_IRQHandler
+                0x00000886                EINT1_IRQHandler
+                0x00000886                TIMER1_IRQHandler
+                0x00000886                UART2_IRQHandler
+                0x00000886                Default_Handler
+                0x00000886                ADC_IRQHandler
+                0x00000886                SSP1_IRQHandler
+                0x00000886                USB_IRQHandler
+                0x00000886                BOD_IRQHandler
+                0x00000886                WDT_IRQHandler
+                0x00000886                QEI_IRQHandler
+                0x00000886                EINT0_IRQHandler
+                0x00000886                DEF_IRQHandler
+                0x00000886                DMA_IRQHandler
+                0x00000886                UART3_IRQHandler
+                0x00000886                MCPWM_IRQHandler
+                0x00000886                ENET_IRQHandler
  .text.uart2_irq
-                0x0000088c       0x64 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x0000088c                uart2_irq
+                0x00000888       0x64 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000888                uart2_irq
  .text.serial_irq_set_internal
-                0x000008f0       0xcc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x000008ec       0xcc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
  .text.uart0_irq
-                0x000009bc       0x64 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x000009bc                uart0_irq
+                0x000009b8       0x64 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x000009b8                uart0_irq
  .text.uart3_irq
-                0x00000a20       0x6c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000a20                uart3_irq
+                0x00000a1c       0x6c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000a1c                uart3_irq
  .text.uart1_irq
-                0x00000a8c       0x64 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000a8c                uart1_irq
+                0x00000a88       0x64 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000a88                uart1_irq
  .text.serial_baud
-                0x00000af0      0x244 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000af0                serial_baud
+                0x00000aec      0x244 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000aec                serial_baud
  .text.serial_format
-                0x00000d34       0x78 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000d34                serial_format
+                0x00000d30       0x78 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000d30                serial_format
  .text.serial_irq_handler
-                0x00000dac       0x20 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000dac                serial_irq_handler
+                0x00000da8       0x20 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000da8                serial_irq_handler
  .text.serial_getc
-                0x00000dcc       0x38 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000dcc                serial_getc
+                0x00000dc8       0x38 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000dc8                serial_getc
  .text.serial_writable
-                0x00000e04       0x74 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000e04                serial_writable
+                0x00000e00       0x74 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000e00                serial_writable
  .text.serial_putc
-                0x00000e78       0x34 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000e78                serial_putc
+                0x00000e74       0x34 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000e74                serial_putc
  .text.serial_set_flow_control
-                0x00000eac      0x12c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000eac                serial_set_flow_control
+                0x00000ea8      0x12c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000ea8                serial_set_flow_control
  .text.serial_init
-                0x00000fd8      0x1bc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-                0x00000fd8                serial_init
+                0x00000fd4      0x1bc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
+                0x00000fd4                serial_init
  .text._ZN4mbed8FilePathC2EPKc
-                0x00001194       0x58 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
-                0x00001194                mbed::FilePath::FilePath(char const*)
-                0x00001194                mbed::FilePath::FilePath(char const*)
+                0x00001190       0x58 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
+                0x00001190                mbed::FilePath::FilePath(char const*)
+                0x00001190                mbed::FilePath::FilePath(char const*)
  .text._ZN4mbed8FilePath8fileNameEv
-                0x000011ec        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
-                0x000011ec                mbed::FilePath::fileName()
+                0x000011e8        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
+                0x000011e8                mbed::FilePath::fileName()
  .text._ZN4mbed8FilePath10fileSystemEv
-                0x000011f0       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
-                0x000011f0                mbed::FilePath::fileSystem()
+                0x000011ec       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
+                0x000011ec                mbed::FilePath::fileSystem()
  .text._ZN4mbed8FilePath6isFileEv
-                0x00001208       0x14 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
-                0x00001208                mbed::FilePath::isFile()
+                0x00001204       0x14 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
+                0x00001204                mbed::FilePath::isFile()
  .text._ZN4mbed8FilePath4fileEv
-                0x0000121c       0x1c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
-                0x0000121c                mbed::FilePath::file()
+                0x00001218       0x1c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
+                0x00001218                mbed::FilePath::file()
  .text._ZN4mbed8FilePath6existsEv
-                0x00001238        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
-                0x00001238                mbed::FilePath::exists()
+                0x00001234        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FilePath.o)
+                0x00001234                mbed::FilePath::exists()
  .text._ZN4mbed6Stream5closeEv
-                0x00001244        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x00001244                mbed::Stream::close()
+                0x00001240        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x00001240                mbed::Stream::close()
  .text._ZN4mbed6Stream5writeEPKvj
-                0x00001248       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x00001248                mbed::Stream::write(void const*, unsigned int)
+                0x00001244       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x00001244                mbed::Stream::write(void const*, unsigned int)
  .text._ZN4mbed6Stream4readEPvj
-                0x00001278       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x00001278                mbed::Stream::read(void*, unsigned int)
+                0x00001274       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x00001274                mbed::Stream::read(void*, unsigned int)
  .text._ZN4mbed6Stream5lseekEli
-                0x000012a8        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012a8                mbed::Stream::lseek(long, int)
+                0x000012a4        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012a4                mbed::Stream::lseek(long, int)
  .text._ZN4mbed6Stream6isattyEv
-                0x000012ac        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012ac                mbed::Stream::isatty()
+                0x000012a8        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012a8                mbed::Stream::isatty()
  .text._ZN4mbed6Stream5fsyncEv
-                0x000012b0        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012b0                mbed::Stream::fsync()
+                0x000012ac        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012ac                mbed::Stream::fsync()
  .text._ZN4mbed6Stream4flenEv
-                0x000012b4        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012b4                mbed::Stream::flen()
+                0x000012b0        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012b0                mbed::Stream::flen()
  .text._ZN4mbed6StreamD2Ev
-                0x000012b8       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012b8                mbed::Stream::~Stream()
-                0x000012b8                mbed::Stream::~Stream()
+                0x000012b4       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012b4                mbed::Stream::~Stream()
+                0x000012b4                mbed::Stream::~Stream()
  .text._ZThn4_N4mbed6StreamD1Ev
-                0x000012dc        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012dc                non-virtual thunk to mbed::Stream::~Stream()
+                0x000012d8        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012d8                non-virtual thunk to mbed::Stream::~Stream()
  .text._ZN4mbed6StreamD0Ev
-                0x000012e4       0x14 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012e4                mbed::Stream::~Stream()
+                0x000012e0       0x14 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012e0                mbed::Stream::~Stream()
  .text._ZThn4_N4mbed6StreamD0Ev
-                0x000012f8        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x000012f8                non-virtual thunk to mbed::Stream::~Stream()
+                0x000012f4        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012f4                non-virtual thunk to mbed::Stream::~Stream()
  .text._ZN4mbed6StreamC2EPKc
-                0x00001300       0x44 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x00001300                mbed::Stream::Stream(char const*)
-                0x00001300                mbed::Stream::Stream(char const*)
+                0x000012fc       0x44 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x000012fc                mbed::Stream::Stream(char const*)
+                0x000012fc                mbed::Stream::Stream(char const*)
  .text._ZN4mbed6Stream6printfEPKcz
-                0x00001344       0x2c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
-                0x00001344                mbed::Stream::printf(char const*, ...)
+                0x00001340       0x2c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Stream.o)
+                0x00001340                mbed::Stream::printf(char const*, ...)
  .text._ZN4mbed6Serial5_getcEv
-                0x00001370        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
-                0x00001370                mbed::Serial::_getc()
+                0x0000136c        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
+                0x0000136c                mbed::Serial::_getc()
  .text._ZThn72_N4mbed6Serial5_getcEv
-                0x00001374        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
-                0x00001374                non-virtual thunk to mbed::Serial::_getc()
+                0x00001370        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
+                0x00001370                non-virtual thunk to mbed::Serial::_getc()
  .text._ZN4mbed6Serial5_putcEi
-                0x0000137c        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
-                0x0000137c                mbed::Serial::_putc(int)
+                0x00001378        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
+                0x00001378                mbed::Serial::_putc(int)
  .text._ZThn72_N4mbed6Serial5_putcEi
-                0x00001380        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
-                0x00001380                non-virtual thunk to mbed::Serial::_putc(int)
+                0x0000137c        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
+                0x0000137c                non-virtual thunk to mbed::Serial::_putc(int)
  .text._ZN4mbed6SerialC2E7PinNameS1_PKc
-                0x00001388       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
-                0x00001388                mbed::Serial::Serial(PinName, PinName, char const*)
-                0x00001388                mbed::Serial::Serial(PinName, PinName, char const*)
+                0x00001384       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(Serial.o)
+                0x00001384                mbed::Serial::Serial(PinName, PinName, char const*)
+                0x00001384                mbed::Serial::Serial(PinName, PinName, char const*)
  .text.mbed_assert_internal
-                0x000013b8       0x2c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(assert.o)
-                0x000013b8                mbed_assert_internal
- .text.error    0x000013e4       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(error.o)
-                0x000013e4                error
+                0x000013b4       0x2c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(assert.o)
+                0x000013b4                mbed_assert_internal
+ .text.error    0x000013e0       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(error.o)
+                0x000013e0                error
  .text.mbed_interface_connected
-                0x00001408        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(mbed_interface.o)
-                0x00001408                mbed_interface_connected
+                0x00001404        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(mbed_interface.o)
+                0x00001404                mbed_interface_connected
  .text.gpio_init_in
-                0x0000140c       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio.o)
-                0x0000140c                gpio_init_in
+                0x00001408       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio.o)
+                0x00001408                gpio_init_in
  .text.gpio_init_out
-                0x00001430       0x44 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio.o)
-                0x00001430                gpio_init_out
+                0x0000142c       0x44 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio.o)
+                0x0000142c                gpio_init_out
  .text.gpio_init_out_ex
-                0x00001474       0x54 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio.o)
-                0x00001474                gpio_init_out_ex
+                0x00001470       0x54 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio.o)
+                0x00001470                gpio_init_out_ex
  .text.pinmap_pinout
-                0x000014c8       0x40 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
-                0x000014c8                pinmap_pinout
+                0x000014c4       0x40 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
+                0x000014c4                pinmap_pinout
  .text.pinmap_merge
-                0x00001508       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
-                0x00001508                pinmap_merge
+                0x00001504       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
+                0x00001504                pinmap_merge
  .text.pinmap_find_peripheral
-                0x0000152c       0x1c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
-                0x0000152c                pinmap_find_peripheral
+                0x00001528       0x1c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
+                0x00001528                pinmap_find_peripheral
  .text.pinmap_peripheral
-                0x00001548       0x34 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
-                0x00001548                pinmap_peripheral
+                0x00001544       0x34 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap_common.o)
+                0x00001544                pinmap_peripheral
  .text.semihost_exit
-                0x0000157c       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(semihost_api.o)
-                0x0000157c                semihost_exit
+                0x00001578       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(semihost_api.o)
+                0x00001578                semihost_exit
  .text.semihost_connected
-                0x00001594       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(semihost_api.o)
-                0x00001594                semihost_connected
- .text.wait_us  0x000015a4       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(wait_api.o)
-                0x000015a4                wait_us
- .text.wait_ms  0x000015bc        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(wait_api.o)
-                0x000015bc                wait_ms
+                0x00001590       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(semihost_api.o)
+                0x00001590                semihost_connected
+ .text.wait_us  0x000015a0       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(wait_api.o)
+                0x000015a0                wait_us
+ .text.wait_ms  0x000015b8        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(wait_api.o)
+                0x000015b8                wait_ms
  .text.gpio_set
-                0x000015c8       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
-                0x000015c8                gpio_set
+                0x000015c4       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
+                0x000015c4                gpio_set
  .text.gpio_init
-                0x000015f8       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
-                0x000015f8                gpio_init
+                0x000015f4       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
+                0x000015f4                gpio_init
  .text.gpio_mode
-                0x00001628        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
-                0x00001628                gpio_mode
+                0x00001624        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
+                0x00001624                gpio_mode
  .text.gpio_dir
-                0x00001630       0x44 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
-                0x00001630                gpio_dir
+                0x0000162c       0x44 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(gpio_api.o)
+                0x0000162c                gpio_dir
  .text.pin_function
-                0x00001674       0x50 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap.o)
-                0x00001674                pin_function
+                0x00001670       0x50 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap.o)
+                0x00001670                pin_function
  .text.pin_mode
-                0x000016c4       0x78 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap.o)
-                0x000016c4                pin_mode
+                0x000016c0       0x78 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(pinmap.o)
+                0x000016c0                pin_mode
  .text.us_ticker_init
-                0x0000173c       0x68 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
-                0x0000173c                us_ticker_init
+                0x00001738       0x68 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
+                0x00001738                us_ticker_init
  .text.us_ticker_read
-                0x000017a4       0x1c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
-                0x000017a4                us_ticker_read
+                0x000017a0       0x1c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
+                0x000017a0                us_ticker_read
  .text.us_ticker_set_interrupt
-                0x000017c0       0x14 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
-                0x000017c0                us_ticker_set_interrupt
+                0x000017bc       0x14 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
+                0x000017bc                us_ticker_set_interrupt
  .text.us_ticker_disable_interrupt
-                0x000017d4       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
-                0x000017d4                us_ticker_disable_interrupt
+                0x000017d0       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
+                0x000017d0                us_ticker_disable_interrupt
  .text.us_ticker_clear_interrupt
-                0x000017e4        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
-                0x000017e4                us_ticker_clear_interrupt
+                0x000017e0        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker.o)
+                0x000017e0                us_ticker_clear_interrupt
  .text._ZN4mbed8FileBaseD2Ev
-                0x000017f0       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
-                0x000017f0                mbed::FileBase::~FileBase()
-                0x000017f0                mbed::FileBase::~FileBase()
+                0x000017ec       0x30 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
+                0x000017ec                mbed::FileBase::~FileBase()
+                0x000017ec                mbed::FileBase::~FileBase()
  .text._ZN4mbed8FileBaseD0Ev
-                0x00001820       0x3c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
-                0x00001820                mbed::FileBase::~FileBase()
+                0x0000181c       0x3c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
+                0x0000181c                mbed::FileBase::~FileBase()
  .text._ZN4mbed8FileBaseC2EPKcNS_8PathTypeE
-                0x0000185c       0x28 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
-                0x0000185c                mbed::FileBase::FileBase(char const*, mbed::PathType)
-                0x0000185c                mbed::FileBase::FileBase(char const*, mbed::PathType)
+                0x00001858       0x28 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
+                0x00001858                mbed::FileBase::FileBase(char const*, mbed::PathType)
+                0x00001858                mbed::FileBase::FileBase(char const*, mbed::PathType)
  .text._ZN4mbed8FileBase6lookupEPKcj
-                0x00001884       0x3c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
-                0x00001884                mbed::FileBase::lookup(char const*, unsigned int)
+                0x00001880       0x3c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
+                0x00001880                mbed::FileBase::lookup(char const*, unsigned int)
  .text._ZN4mbed8FileBase11getPathTypeEv
-                0x000018c0        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
-                0x000018c0                mbed::FileBase::getPathType()
+                0x000018bc        0x4 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileBase.o)
+                0x000018bc                mbed::FileBase::getPathType()
  .text._ZN4mbed8FileLikeD2Ev
-                0x000018c4       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
-                0x000018c4                mbed::FileLike::~FileLike()
-                0x000018c4                mbed::FileLike::~FileLike()
+                0x000018c0       0x24 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
+                0x000018c0                mbed::FileLike::~FileLike()
+                0x000018c0                mbed::FileLike::~FileLike()
  .text._ZThn4_N4mbed8FileLikeD1Ev
-                0x000018e8        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
-                0x000018e8                non-virtual thunk to mbed::FileLike::~FileLike()
+                0x000018e4        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
+                0x000018e4                non-virtual thunk to mbed::FileLike::~FileLike()
  .text._ZN4mbed8FileLikeD0Ev
-                0x000018f0       0x2c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
-                0x000018f0                mbed::FileLike::~FileLike()
+                0x000018ec       0x2c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
+                0x000018ec                mbed::FileLike::~FileLike()
  .text._ZThn4_N4mbed8FileLikeD0Ev
-                0x0000191c        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
-                0x0000191c                non-virtual thunk to mbed::FileLike::~FileLike()
+                0x00001918        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
+                0x00001918                non-virtual thunk to mbed::FileLike::~FileLike()
  .text._ZN4mbed8FileLikeC2EPKc
-                0x00001924       0x28 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
-                0x00001924                mbed::FileLike::FileLike(char const*)
-                0x00001924                mbed::FileLike::FileLike(char const*)
+                0x00001920       0x28 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FileLike.o)
+                0x00001920                mbed::FileLike::FileLike(char const*)
+                0x00001920                mbed::FileLike::FileLike(char const*)
  .text._ZN4mbed10SerialBase12_irq_handlerEm9SerialIrq
-                0x0000194c       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
-                0x0000194c                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
+                0x00001948       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
+                0x00001948                mbed::SerialBase::_irq_handler(unsigned long, SerialIrq)
  .text._ZN4mbed10SerialBaseC2E7PinNameS1_
-                0x0000195c       0x4c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
-                0x0000195c                mbed::SerialBase::SerialBase(PinName, PinName)
-                0x0000195c                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x00001958       0x4c ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
+                0x00001958                mbed::SerialBase::SerialBase(PinName, PinName)
+                0x00001958                mbed::SerialBase::SerialBase(PinName, PinName)
  .text._ZN4mbed10SerialBase10_base_getcEv
-                0x000019a8        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
-                0x000019a8                mbed::SerialBase::_base_getc()
+                0x000019a4        0x8 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
+                0x000019a4                mbed::SerialBase::_base_getc()
  .text._ZN4mbed10SerialBase10_base_putcEi
-                0x000019b0       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
-                0x000019b0                mbed::SerialBase::_base_putc(int)
+                0x000019ac       0x10 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
+                0x000019ac                mbed::SerialBase::_base_putc(int)
  .text.us_ticker_irq_handler
-                0x000019c0       0x48 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker_api.o)
-                0x000019c0                us_ticker_irq_handler
+                0x000019bc       0x48 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker_api.o)
+                0x000019bc                us_ticker_irq_handler
  .text._ZN4mbed15FunctionPointerC2EPFvvE
-                0x00001a08        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FunctionPointer.o)
-                0x00001a08                mbed::FunctionPointer::FunctionPointer(void (*)())
-                0x00001a08                mbed::FunctionPointer::FunctionPointer(void (*)())
+                0x00001a04        0xc ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FunctionPointer.o)
+                0x00001a04                mbed::FunctionPointer::FunctionPointer(void (*)())
+                0x00001a04                mbed::FunctionPointer::FunctionPointer(void (*)())
  .text._ZN4mbed15FunctionPointer4callEv
-                0x00001a14       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FunctionPointer.o)
-                0x00001a14                mbed::FunctionPointer::call()
- .text._ZdlPv   0x00001a2c        0x4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(del_op.o)
-                0x00001a2c                operator delete(void*)
+                0x00001a10       0x18 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FunctionPointer.o)
+                0x00001a10                mbed::FunctionPointer::call()
+ .text._ZdlPv   0x00001a28        0x4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(del_op.o)
+                0x00001a28                operator delete(void*)
  .text.__aeabi_atexit
-                0x00001a30        0xa /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(atexit_arm.o)
-                0x00001a30                __aeabi_atexit
- .text.abs      0x00001a3a        0x8 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-abs.o)
-                0x00001a3a                abs
- *fill*         0x00001a42        0x2 
+                0x00001a2c        0xa /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libstdc++_nano.a(atexit_arm.o)
+                0x00001a2c                __aeabi_atexit
+ .text.abs      0x00001a36        0x8 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-abs.o)
+                0x00001a36                abs
+ *fill*         0x00001a3e        0x2 
  .text.__cxa_atexit
-                0x00001a44       0x1c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-cxa_atexit.o)
-                0x00001a44                __cxa_atexit
- .text.__errno  0x00001a60        0xc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-errno.o)
-                0x00001a60                __errno
- .text.exit     0x00001a6c       0x28 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-exit.o)
-                0x00001a6c                exit
+                0x00001a40       0x1c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-cxa_atexit.o)
+                0x00001a40                __cxa_atexit
+ .text.__errno  0x00001a5c        0xc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-errno.o)
+                0x00001a5c                __errno
+ .text.exit     0x00001a68       0x28 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-exit.o)
+                0x00001a68                exit
  .text._fclose_r
-                0x00001a94       0xa4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fclose.o)
-                0x00001a94                _fclose_r
- .text.fclose   0x00001b38       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fclose.o)
-                0x00001b38                fclose
+                0x00001a90       0xa4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fclose.o)
+                0x00001a90                _fclose_r
+ .text.fclose   0x00001b34       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fclose.o)
+                0x00001b34                fclose
  .text.__sflush_r
-                0x00001b48      0x106 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fflush.o)
-                0x00001b48                __sflush_r
- *fill*         0x00001c4e        0x2 
+                0x00001b44      0x106 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fflush.o)
+                0x00001b44                __sflush_r
+ *fill*         0x00001c4a        0x2 
  .text._fflush_r
-                0x00001c50       0x54 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fflush.o)
-                0x00001c50                _fflush_r
- .text.fflush   0x00001ca4       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fflush.o)
-                0x00001ca4                fflush
+                0x00001c4c       0x54 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fflush.o)
+                0x00001c4c                _fflush_r
+ .text.fflush   0x00001ca0       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fflush.o)
+                0x00001ca0                fflush
  .text._cleanup_r
-                0x00001cc8        0xc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
-                0x00001cc8                _cleanup_r
+                0x00001cc4        0xc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001cc4                _cleanup_r
  .text.std.isra.0
-                0x00001cd4       0x48 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001cd0       0x48 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
  .text.__sfmoreglue
-                0x00001d1c       0x2c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
-                0x00001d1c                __sfmoreglue
- .text.__sinit  0x00001d48       0x60 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
-                0x00001d48                __sinit
- .text.__sfp    0x00001da8       0x74 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
-                0x00001da8                __sfp
+                0x00001d18       0x2c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001d18                __sfmoreglue
+ .text.__sinit  0x00001d44       0x60 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001d44                __sinit
+ .text.__sfp    0x00001da4       0x74 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001da4                __sfp
  .text.__sfp_lock_acquire
-                0x00001e1c        0x2 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
-                0x00001e1c                __sfp_lock_acquire
+                0x00001e18        0x2 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001e18                __sfp_lock_acquire
  .text.__sfp_lock_release
-                0x00001e1e        0x2 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
-                0x00001e1e                __sfp_lock_release
+                0x00001e1a        0x2 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-findfp.o)
+                0x00001e1a                __sfp_lock_release
  .text._fopen_r
-                0x00001e20       0x80 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fopen.o)
-                0x00001e20                _fopen_r
- .text.fopen    0x00001ea0       0x14 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fopen.o)
-                0x00001ea0                fopen
- .text.fprintf  0x00001eb4       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fprintf.o)
-                0x00001eb4                fprintf
-                0x00001eb4                fiprintf
+                0x00001e1c       0x80 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fopen.o)
+                0x00001e1c                _fopen_r
+ .text.fopen    0x00001e9c       0x14 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fopen.o)
+                0x00001e9c                fopen
+ .text.fprintf  0x00001eb0       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fprintf.o)
+                0x00001eb0                fprintf
+                0x00001eb0                fiprintf
  .text._fseek_r
-                0x00001ed8        0x4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fseek.o)
-                0x00001ed8                _fseek_r
+                0x00001ed4        0x4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fseek.o)
+                0x00001ed4                _fseek_r
  .text._fseeko_r
-                0x00001edc      0x118 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fseeko.o)
-                0x00001edc                _fseeko_r
+                0x00001ed8      0x118 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fseeko.o)
+                0x00001ed8                _fseeko_r
  .text._fwalk_reent
-                0x00001ff4       0x3c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fwalk.o)
-                0x00001ff4                _fwalk_reent
+                0x00001ff0       0x3c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-fwalk.o)
+                0x00001ff0                _fwalk_reent
  .text.__libc_init_array
-                0x00002030       0x4c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-init.o)
-                0x00002030                __libc_init_array
+                0x0000202c       0x4c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-init.o)
+                0x0000202c                __libc_init_array
  .text.__smakebuf_r
-                0x0000207c       0x98 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-makebuf.o)
-                0x0000207c                __smakebuf_r
- .text.malloc   0x00002114       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-malloc.o)
-                0x00002114                malloc
- .text.free     0x00002124       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-malloc.o)
-                0x00002124                free
- .text.memchr   0x00002134       0x1c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-memchr.o)
-                0x00002134                memchr
- .text.memcpy   0x00002150       0x16 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-memcpy.o)
-                0x00002150                memcpy
- .text.memset   0x00002166       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-memset.o)
-                0x00002166                memset
- *fill*         0x00002176        0x2 
- .text._free_r  0x00002178       0x88 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-freer.o)
-                0x00002178                _free_r
+                0x00002078       0x98 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-makebuf.o)
+                0x00002078                __smakebuf_r
+ .text.malloc   0x00002110       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-malloc.o)
+                0x00002110                malloc
+ .text.free     0x00002120       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-malloc.o)
+                0x00002120                free
+ .text.memchr   0x00002130       0x1c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-memchr.o)
+                0x00002130                memchr
+ .text.memcpy   0x0000214c       0x16 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-memcpy.o)
+                0x0000214c                memcpy
+ .text.memset   0x00002162       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-memset.o)
+                0x00002162                memset
+ *fill*         0x00002172        0x2 
+ .text._free_r  0x00002174       0x88 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-freer.o)
+                0x00002174                _free_r
  .text._malloc_r
-                0x00002200       0xac /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-mallocr.o)
-                0x00002200                _malloc_r
+                0x000021fc       0xac /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-mallocr.o)
+                0x000021fc                _malloc_r
  .text.__sfputc_r
-                0x000022ac       0x2c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000022a8       0x2c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
  .text.__sfputs_r
-                0x000022d8       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x000022d8                __sfputs_r
+                0x000022d4       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000022d4                __sfputs_r
  .text._vfprintf_r
-                0x000022fc      0x210 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x000022fc                _vfiprintf_r
-                0x000022fc                _vfprintf_r
+                0x000022f8      0x210 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x000022f8                _vfiprintf_r
+                0x000022f8                _vfprintf_r
  .text.vfprintf
-                0x0000250c       0x1c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
-                0x0000250c                vfiprintf
-                0x0000250c                vfprintf
- .text.__cvt    0x00002528       0xbc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
-                0x00002528                __cvt
+                0x00002508       0x1c /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf.o)
+                0x00002508                vfiprintf
+                0x00002508                vfprintf
+ .text.__cvt    0x00002524       0xbc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x00002524                __cvt
  .text.__exponent
-                0x000025e4       0x62 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
-                0x000025e4                __exponent
- *fill*         0x00002646        0x2 
+                0x000025e0       0x62 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x000025e0                __exponent
+ *fill*         0x00002642        0x2 
  .text._printf_float
-                0x00002648      0x488 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
-                0x00002648                _printf_float
+                0x00002644      0x488 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_float.o)
+                0x00002644                _printf_float
  .text._printf_common
-                0x00002ad0       0xea /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00002ad0                _printf_common
- *fill*         0x00002bba        0x2 
+                0x00002acc       0xea /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00002acc                _printf_common
+ *fill*         0x00002bb6        0x2 
  .text._printf_i
-                0x00002bbc      0x234 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
-                0x00002bbc                _printf_i
+                0x00002bb8      0x234 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfprintf_i.o)
+                0x00002bb8                _printf_i
  .text._scanf_float
-                0x00002df0      0x3cc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfscanf_float.o)
-                0x00002df0                _scanf_float
+                0x00002dec      0x3cc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfscanf_float.o)
+                0x00002dec                _scanf_float
  .text._scanf_chars
-                0x000031bc       0xbc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
-                0x000031bc                _scanf_chars
+                0x000031b8       0xbc /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+                0x000031b8                _scanf_chars
  .text._scanf_i
-                0x00003278      0x1e4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
-                0x00003278                _scanf_i
- .text._open_r  0x0000345c       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-openr.o)
-                0x0000345c                _open_r
+                0x00003274      0x1e4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-nano-vfscanf_i.o)
+                0x00003274                _scanf_i
+ .text._open_r  0x00003458       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-openr.o)
+                0x00003458                _open_r
  .text.__fpclassifyd
-                0x00003480       0x50 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-s_fpclassify.o)
-                0x00003480                __fpclassifyd
- .text._sbrk_r  0x000034d0       0x20 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sbrkr.o)
-                0x000034d0                _sbrk_r
- .text.__sccl   0x000034f0       0x62 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sccl.o)
-                0x000034f0                __sccl
- .text.setbuf   0x00003552       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-setbuf.o)
-                0x00003552                setbuf
- *fill*         0x00003562        0x2 
- .text.setvbuf  0x00003564      0x110 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-setvbuf.o)
-                0x00003564                setvbuf
- .text.nanf     0x00003674        0x8 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sf_nan.o)
-                0x00003674                nanf
- .text.sprintf  0x0000367c       0x48 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sprintf.o)
-                0x0000367c                sprintf
-                0x0000367c                siprintf
- .text.sscanf   0x000036c4       0x54 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sscanf.o)
-                0x000036c4                sscanf
-                0x000036c4                siscanf
- .text.__sread  0x00003718       0x22 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
-                0x00003718                __sread
+                0x0000347c       0x50 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-s_fpclassify.o)
+                0x0000347c                __fpclassifyd
+ .text._sbrk_r  0x000034cc       0x20 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sbrkr.o)
+                0x000034cc                _sbrk_r
+ .text.__sccl   0x000034ec       0x62 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sccl.o)
+                0x000034ec                __sccl
+ .text.setbuf   0x0000354e       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-setbuf.o)
+                0x0000354e                setbuf
+ *fill*         0x0000355e        0x2 
+ .text.setvbuf  0x00003560      0x110 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-setvbuf.o)
+                0x00003560                setvbuf
+ .text.nanf     0x00003670        0x8 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sf_nan.o)
+                0x00003670                nanf
+ .text.sprintf  0x00003678       0x48 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sprintf.o)
+                0x00003678                sprintf
+                0x00003678                siprintf
+ .text.sscanf   0x000036c0       0x54 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-sscanf.o)
+                0x000036c0                sscanf
+                0x000036c0                siscanf
+ .text.__sread  0x00003714       0x22 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
+                0x00003714                __sread
  .text.__seofread
-                0x0000373a        0x4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
-                0x0000373a                __seofread
+                0x00003736        0x4 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
+                0x00003736                __seofread
  .text.__swrite
-                0x0000373e       0x38 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
-                0x0000373e                __swrite
- .text.__sseek  0x00003776       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
-                0x00003776                __sseek
+                0x0000373a       0x38 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
+                0x0000373a                __swrite
+ .text.__sseek  0x00003772       0x24 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
+                0x00003772                __sseek
  .text.__sclose
-                0x0000379a        0x8 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
-                0x0000379a                __sclose
- .text          0x000037a2       0x14 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strcmp.o)
-                0x000037a2                strcmp
- .text.strlen   0x000037b6       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strlen.o)
-                0x000037b6                strlen
- .text.strncmp  0x000037c6       0x32 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strncmp.o)
-                0x000037c6                strncmp
- .text.match    0x000037f8       0x26 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strtod.o)
- .text.sulp     0x0000381e       0x42 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strtod.o)
+                0x00003796        0x8 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-stdio.o)
+                0x00003796                __sclose
+ .text          0x0000379e       0x14 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strcmp.o)
+                0x0000379e                strcmp
+ .text.strlen   0x000037b2       0x10 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strlen.o)
+                0x000037b2                strlen
+ .text.strncmp  0x000037c2       0x32 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strncmp.o)
+                0x000037c2                strncmp
+ .text.match    0x000037f4       0x26 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strtod.o)
+ .text.sulp     0x0000381a       0x42 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strtod.o)
+ *fill*         0x0000385c        0x4 
  .text._strtod_r
                 0x00003860      0xc40 /opt/gcc-arm-none-eabi-4_9-2014q4/bin/../lib/gcc/arm-none-eabi/4.9.3/../../../../arm-none-eabi/lib/armv7-m/libc_nano.a(lib_a-strtod.o)
                 0x00003860                _strtod_r
@@ -2362,14 +2363,14 @@ OUTPUT(hw02.elf elf32-littlearm)
  .comment       0x00000000       0x71 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(us_ticker_api.o)
  .comment       0x00000000       0x71 ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(FunctionPointer.o)
 
-.debug_info     0x00000000     0x2313
- .debug_info    0x00000000     0x2313 main.o
+.debug_info     0x00000000     0x22fa
+ .debug_info    0x00000000     0x22fa main.o
 
-.debug_abbrev   0x00000000      0x599
- .debug_abbrev  0x00000000      0x599 main.o
+.debug_abbrev   0x00000000      0x595
+ .debug_abbrev  0x00000000      0x595 main.o
 
-.debug_loc      0x00000000      0x144
- .debug_loc     0x00000000      0x144 main.o
+.debug_loc      0x00000000      0x123
+ .debug_loc     0x00000000      0x123 main.o
 
 .debug_aranges  0x00000000       0x80
  .debug_aranges
@@ -2381,9 +2382,9 @@ OUTPUT(hw02.elf elf32-littlearm)
 .debug_line     0x00000000      0x47e
  .debug_line    0x00000000      0x47e main.o
 
-.debug_str      0x00000000     0x1040
- .debug_str     0x00000000     0x1040 main.o
-                               0x1143 (size before relaxing)
+.debug_str      0x00000000     0x103f
+ .debug_str     0x00000000     0x103f main.o
+                               0x1142 (size before relaxing)
 
 .debug_frame    0x00000000     0x151c
  .debug_frame   0x00000000      0x130 main.o
@@ -3444,7 +3445,7 @@ serial_irq_handler                                ./mbed/TARGET_LPC1768/TOOLCHAI
 serial_irq_set                                    ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
                                                   ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
 serial_pinout_tx                                  ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
-serial_prt(unsigned char*)                        main.o
+serial_prt()                                      main.o
 serial_putc                                       ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(serial_api.o)
                                                   ./mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/libmbed.a(SerialBase.o)
                                                   mbed/TARGET_LPC1768/TOOLCHAIN_GCC_ARM/retarget.o
