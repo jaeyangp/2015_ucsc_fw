@@ -1,0 +1,81 @@
+Optional: try compile this code and check the output:
+/* 
+ * g++ sz.cpp -o sz 
+ * What is the output of printf?
+ */
+#include<iostream>
+class ZeroByte {
+   unsigned long long Arr[0];
+};
+class OneByte {
+};
+int main(void) {
+  ZeroByte zero;
+  OneByte one;
+  printf("sizeof zero:%d one:%d\n", sizeof(zero), sizeof(one)); 
+  return 0;
+}
+
+
+Optional: study printf ;  You may use "strace"  from a linux prompt.   Or use objdump to find out how printf works on mbed.
+or Learn to use cscope to trace c codes:  http://cscope.sourceforge.net/
+
+
+backtrace (bt) of printf
+int printf(const char *format, ...) in one bare metal environment
+     |- int vsprintf (char * s, const char * format, va_list arg );
+     |- buffer_print_function_ptr = board_buffer_print
+
+     | - int board_buffer_print(const char *str)
+     |- int board_buffer_write(char *buffer, int length)
+     |-  int dev_uart_write(int handle, unsigned char *buffer, int length)
+              |- iocb.opcdoe: CMD_DEV_WRITE
+              |- iocb_dispatch
+          
+     |- int cmd_dev_write(devctx_t * ctx, iocb_t * iocb)
+     |- int chip_uart_write(devctx_t * ctx, iocb_buffer_t * buffer)
+     |- read/write chip UART Registers
+
+
+
+ uClibc printf
+        uClibc/libc/stdio/printf.c
+        uClibc/libc/stdio/vfprintf.c
+        uClibc/libc/stdio/_vfprintf.c
+                _outnstr(stream, s, slen)
+        uClibc/libc/stdio/_fwrite.c
+                __stdio_fwrite((const unsigned char *)(string), len, stream)
+        uClibc/libc/stdio/_WRITE.c
+                __stdio_WRITE(stream, buffer, bytes);
+                __WRITE(stream, (char *) buf, stodo);
+                write((STREAMPTR)->__filedes,(BUF),(SIZE))
+        uClibc/libc/sysdeps/linux/common/write.c
+                install syscalls
+                _syscall3(ssize_t, __NC(write), int, fd, const void *, buf, size_t, count)
+                        ==> SYSCALL_FUNC(3, args)
+
+
+newlib printf
+        newlib/src/newlib/libc/stdio/printf.c: printf
+        newlib/src/newlib/libc/stdio/vfprintf.c: _VFPRINTF_R _vfprintf_r
+                call  PRINT(ptr, len)
+                        __sprint_r(data, fp, &uio)
+                        __SPRINT(data, fp, &uio)
+                        __SPRINT(data, fp, (ptr), (len))
+
+                __sprint_r if _FVWRITE_IN_STREAMIO @ newlib/libc/machine/powerpc/vfprintf.c
+                __sfputs_r @         uClibc/libc/stdio/vfprintf.c
+                        --> _fputc_r (ptr, buf[i], fp)
+        newlib/libc/stdio/fputc.c
+                _newlib_flockfile_start (file);
+                result = _putc_r (ptr, ch, file); --> result = __sputc_r (ptr, c, fp);
+                                                  --> return (__swbuf_r(_ptr, _c, _p));
+                _newlib_flockfile_end (file);
+        newlib/libc/stdio/wbuf.c
+                _fflush_r (ptr, fp)
+        newlib/libc/stdio/fflush.c
+                  ret = __sflush_r (ptr, fp);
+                        fp->_write (ptr, fp->_cookie, (char *) p, n);
+
+       (dev_uart_write, dev_uart_putc )
+

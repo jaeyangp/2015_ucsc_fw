@@ -1,0 +1,26 @@
+QUIZ #3
+--------------------------------------------------------------------
+1. What is the _mask value for LED1? 
+   What is the address of FIOSET?
+
+LED1 is connected to P1.18
+FIO1SET2 is used to turn LED1 on.
+_mask: (1 << 2) or 0x04
+FIO1SET2 address = 0x2009 c058
+--------------------------------------------------------------------
+2. What is the RS232 Frame?
+(Non-parity, 8bit, 1 stop bit) Start bit, 8-bit data, stop bit
+(Parity, 8 bit, 1 stop bit) Start bit, 8-bit data, 1 parity, 1 stop bit
+..
+--------------------------------------------------------------------
+3. Explain the start and stop conditions of i2c?
+START: SDA is pulled LOW while SCL is HIGH
+STOP : SDA is pulled HIGH while SCL is HIGH
+--------------------------------------------------------------------
+4. Is the i2c acknowledge SDA LOW or SDA HIGH?
+SDA LOW
+--------------------------------------------------------------------
+5. Tell me about the DDR3 write leveling Concept in one sentence.  
+   (ref: slides)
+An adjustment of the signal timing that compenstes for DQS (DQ strobe) / CK skew
+--------------------------------------------------------------------
