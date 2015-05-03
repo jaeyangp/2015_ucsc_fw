@@ -1,0 +1,106 @@
+BEGIN
+--------------------------------------------------------------------
+Q1: Implement the following inline functions: 
+inline int CircularBufferIsFull(CircularBuffer* que) 
+inline int CircularBufferIsEmpty(CircularBuffer* que) 
+
+
+inline int CircularBufferIsFull(CircularBuffer* que) 
+{
+	(que->count == que->size) ? rerurn 1 : return 0;
+}
+
+inline int CircularBufferIsEmpty(CircularBuffer* que) 
+{
+	(que->count == 0) ? return 1 : return 0;
+}
+
+--------------------------------------------------------------------
+Q2: How to compute "Interrupt Latency"?
+Interrupt Latency means the elapse time between when an interrupt is generated to when the interrupt service is started.
+So, it can be measurred like followings:
+Signal1: system clock
+Signal2: Interrupt generation signal
+Signal3: Interrupt signal
+         +---+   +---+   +---+   +---+   +---+   +---+   +---+   +---+   +---+   +---
+clk   ___|   |___|   |___|   |___|   |___|   |___|   |___|   |___|   |___|   |___|   
+
+                         +---+
+sig2  ___________________|   |______________________________________________________   
+
+                                                 +---+
+sig2  ___________________________________________|   |______________________________   
+
+                         |                       |
+                         |<------ latency ------>|
+
+If one clock cycle is 10ns, sig2 was appeared 3 clk later (= 30ns of latency)
+
+--------------------------------------------------------------------
+Q3: Serial pc(USBTX, USBRX); // tx, rx 
+    What API (function) do you use to change the baud rate?
+
+    pc.baud(int baudrate)
+
+--------------------------------------------------------------------
+Q4: How many bit(s) does TDO have? Is TDO an input or output type? (Ref: JTAG Pins) 
+
+TDO: 1 bit, output
+
+--------------------------------------------------------------------
+Q5:
+What is the address of ledArr[0]? 
+What is the address of ch? 
+
+ledArr[0]
+	pin = P1.18
+	mask = 0x00040000
+	FIO1DIR = 0x2009c020
+	FIO1PIN = 0x2009c034
+	FIO1SET = 0x2009c038
+	FIO1CLR = 0x2009c03c
+
+address of ch = it was not assigned to memory address, but register $r0
+
+/* 
+* Enter a hex number [0-9a-fA-F]; Decode it in 4-bit binary format and display them on 4 on board leds. 
+*/ 
+
+#include "mbed.h" 
+
+Serial pc(USBTX, USBRX); // tx, rx 
+DigitalOut ledArr[4] = {DigitalOut(LED1), DigitalOut(LED2), DigitalOut(LED3), DigitalOut(LED4)}; 
+void DisplayLed(int ch) 
+{ 
+	int i=0;
+
+	if (ch>='0' && ch<='9')
+		ch-='0';
+	else if (ch>='A' && ch<='F') {
+		ch-='A';
+		ch+=10;
+	} else if (ch>='a' && ch<='f') {
+		ch-='a';
+		ch+=10;
+	} else
+		ch=0;
+
+	for (i=0; i<4; i++) { 
+		if(ch& (1<<i))
+			ledArr[i] = 1; 
+		else
+			ledArr[i] = 0;
+	} 
+} 
+
+int main(void) { 
+	int ch; 
+	pc.baud(9600); 
+	pc.printf("\r\nHello World!"); 
+	while(1) { 
+		pc.printf("\r\nEnter:"); 
+		ch = pc.getc(); 
+		pc.putc(ch); 
+		DisplayLed(ch); 
+	} 
+}
