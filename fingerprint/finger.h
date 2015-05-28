@@ -27,7 +27,7 @@ PwmOut LEDR(p23);
 PwmOut LEDG(p24);
 PwmOut LEDB(p25);
 
-int EnrollID = 0;
+Timer debounce;
 
 #endif
 

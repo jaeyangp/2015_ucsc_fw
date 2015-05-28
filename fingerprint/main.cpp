@@ -20,10 +20,13 @@ void blue_on(void);
 void rgb_off(void);
 void init(void);
 void disp_GT_info(void);
-void chk_Enrolled(int);
-void identify(int);
 void disp_menu(void);
-void enroll_id(int);
+void chk_Enrolled(int);
+void enroll_id(void);
+void verify_id(void);
+void identify_id(void);
+void delete_id(void);
+void select_id(void);
 
 void joy_center_ISR(void);
 void joy_right_ISR(void);
@@ -31,20 +34,22 @@ void joy_left_ISR(void);
 void joy_up_ISR(void);
 void joy_down_ISR(void);
 
-int progress(int status, char *msg)
-{
-    debug.printf("%s", msg);
-	LCD.cls();
-	LCD.locate(0, 2);
-    LCD.printf("%s", msg);
-	good_beep();
+int EnrollID = 0;
+int current = 0;
 
-	if (status >= 1 && status <= 100) {
-		blue_on();
-	}
+#define MENU_SZ 6
+#define MAX_ID 20
 
-    return 0;
-}
+char *menu[] = {"[0] Menu              >>",
+			    "[1] Select ID      << >>", 
+			    "[2] Enroll ID      << >>",
+			    "[3] Verify ID      << >>", 
+			    "[4] Identify ID    << >>", 
+			    "[5] Delete ID      <<   "};
+
+void (*ptr_func[MENU_SZ])(void) = {disp_menu, select_id, enroll_id, identify_id, identify_id, delete_id};
+
+/////////////////////
 
 void err_beep(void)
 {
@@ -93,6 +98,38 @@ void rgb_off(void)
 	LEDB = 1.0;
 }
 
+///////////////////
+
+int progress(int status, char *msg)
+{
+    debug.printf("%s", msg);
+
+	LCD.cls();
+	LCD.locate(0, 1);
+    LCD.printf("%s", msg);
+
+	good_beep();
+
+	if (status >= 1 && status <= 100) {
+		blue_on();
+	}
+
+    return 0;
+}
+
+void disp_menu(void)
+{
+	LCD.cls();
+	LCD.locate(0, 1);
+	//          1234567890123456789012345
+	LCD.printf("Fingerprint System v2.0  \n");
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	LCD.printf("   << MENU >>  * RUN     \n");
+   	finger.CmosLed(0);
+	rgb_off();
+}
+
 void init(void)
 {
     debug.format(8, Serial::None, 1);
@@ -136,9 +173,44 @@ void chk_Enrolled(int EnrollID)
     }
 }
 
-void identify(int ID)
+void select_id(void)
 {
+	LCD.locate(0, 10);
+	LCD.printf("ID = %d                \n", EnrollID);
+	LCD.printf("   << MENU >>  * CHANGE\n");
+}
+
+void enroll_id(void)
+{
+    finger.Open();
+
+	chk_Enrolled(EnrollID);
+   	finger.Enroll(EnrollID, progress);
+   	finger.CmosLed(1);
+
+	LCD.locate(0, 10);
+	LCD.printf("                        ");
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	LCD.printf("   << MENU >>  * RUN     \n");
+}
+
+void verify_id(void)
+{
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	//          1234567890123456789012345
+	LCD.printf("   << MENU >>  * RUN     \n");
+}
+
+void identify_id(void)
+{
+	int id;
+
+   	finger.CmosLed(1);
+
 	debug.printf("Press finger for Identify\n");
+	LCD.locate(0, 20);
 	LCD.printf("Press finger for Identify\n");
 
 	finger.WaitPress(1);
@@ -146,122 +218,118 @@ void identify(int ID)
 	if (finger.Capture(1) != 0) {
 		debug.printf("Press finger for Identify\n");
 		LCD.cls();
+		LCD.locate(0, 20);
+		//          1234567890123456789012345
 		LCD.printf("Press finger for Identify\n");
 	}
 
-	ID = finger.Identify();
+	id = finger.Identify();
 	
-	debug.printf("ID = %d\n", ID); 
+	debug.printf("ID = %d\n", id); 
 	debug.printf("Remove finger\n");
 
-	if (ID == -1) {
+	if (id == -1) {
 		err_beep();
 		red_on();
 		
 		LCD.cls();
-		LCD.locate(0, 2);
-		LCD.printf("ID = %d, Not matched!\n", ID); 
+		LCD.locate(0, 1);
+		LCD.printf("ID = %d, Not matched!\n", id); 
 	}
 	else {
 		good_beep();
 		green_on();
 		
 		LCD.cls();
-		LCD.locate(0, 2);
-		LCD.printf("ID = %d, Matched!\n", ID); 
+		LCD.locate(0, 1);
+		LCD.printf("ID = %d, Matched!\n", id); 
 	}
 
-	LCD.printf("Push [C] to menu\n");
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	LCD.printf("   << MENU >>  * RUN     \n");
 
     finger.WaitPress(0);
-}
-
-void disp_menu(void)
-{
-	LCD.cls();
-	LCD.locate(0, 2);
-	LCD.printf("Fingerprint System v1.0\n");
-	LCD.printf("ER[U] VF[D] ID[L] DL[R]\n");
-	LCD.printf("Push [C] to Menu\n");
    	finger.CmosLed(0);
-}
-
-void enroll_id(int EnrollID)
-{
-	int sts;
-    sts = finger.Open();
-
-	chk_Enrolled(EnrollID);
-   	finger.Enroll(EnrollID, progress);
-   	finger.CmosLed(1);
-	LCD.printf("Push [C] to Menu\n");
 }
 
 void delete_id(void)
 {
-	int i = 0;
-	for (i = 0; i < 20; i++) {
-   		if (finger.DeleteID(i) == 0) {
-			LCD.locate(0, 10);
-			LCD.printf("%d deleted\n", i);
-		}
-		else {
-			LCD.locate(0, 10);
-			LCD.printf("%d is not found\n", i);
-		}
-
-		wait(0.5);
+   	if (finger.DeleteID(EnrollID) == 0) {
+		LCD.locate(0, 1);
+		//          1234567890123456789012345
+		LCD.printf("%d deleted               \n", EnrollID);
 	}
-	
-	//LCD.printf("All deleted!\n");
-	LCD.printf("Push [C] to Menu\n");
+	else {
+		LCD.locate(0, 1);
+		LCD.printf("%d is not found          \n", EnrollID);
+	}
+
+	wait(0.5);
+
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	LCD.printf("   << MENU >>  * RUN     \n");
 }
 
-void joy_center_ISR(void)
+void joy_center_ISR1(void)
 {
-	disp_menu();
-	rgb_off();
-   	finger.CmosLed(0);
+
+	ptr_func[current]();
 }
 
 void joy_right_ISR(void)
 {
-	LCD.cls();
-	LCD.locate(0, 2);
-	LCD.printf("Delete ID\n");
-	delete_id();
+	current++;
+	if (current > MENU_SZ - 1)
+		current = 0;
+
+	LCD.locate(0, 10);
+	LCD.printf("                        ");
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	LCD.printf("   << MENU >>  * RUN     \n");
+
+	debounce.reset();
 }
 
 void joy_left_ISR(void)
 {
-	LCD.cls();
-	LCD.locate(0, 2);
-	LCD.printf("Identify ID\n");
-   	finger.CmosLed(1);
-	identify(EnrollID);
+	current--;
+	if (current < 0)
+		current = MENU_SZ - 1;
+
+	LCD.locate(0, 10);
+	LCD.printf("                        ");
+	LCD.locate(0, 10);
+	LCD.printf("%s\n", menu[current]);
+	LCD.printf("   << MENU >>  * RUN     \n");
+
+	debounce.reset();
 }
 
 void joy_up_ISR(void)
 {
-	LCD.cls();
-	LCD.locate(0, 2);
-	LCD.printf("Enroll ID\n");
-	enroll_id(EnrollID);
-	//identify(EnrollID);
+	EnrollID++;
+	if (EnrollID > (MAX_ID - 1))
+		EnrollID = 0;
+
+	debounce.reset();
 }
 
 void joy_down_ISR(void)
 {
-	LCD.cls();
-	LCD.locate(0, 2);
-	LCD.printf("Verify ID\n");
-   	finger.CmosLed(1);
-	identify(EnrollID);
+	EnrollID--;
+	if (EnrollID < 0)
+		EnrollID = MAX_ID - 1;
+
+	debounce.reset();
 }
 
 void set_ISR(void)
 {
-	JOY_CENTER.rise(&joy_center_ISR);
+	debounce.start();
+	JOY_CENTER.rise(&joy_center_ISR1);
 	JOY_RIGHT.rise(&joy_right_ISR);
 	JOY_LEFT.rise(&joy_left_ISR);
 	JOY_UP.rise(&joy_up_ISR);
@@ -271,7 +339,6 @@ void set_ISR(void)
 int main() 
 {
     int sts = 0;
-    int ID = 0;
 
 	init();
 	disp_menu();
@@ -281,6 +348,4 @@ int main()
     debug.printf("sts = %d\n", sts);
 
     if (sts == 0) disp_GT_info();
-
-	//chk_Enrolled(EnrollID);
 }
